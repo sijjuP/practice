@@ -16,7 +16,7 @@ namespace Practice
             try
             {
                 if (5 == j)
-                    throw new Exception("no 5");
+                    throw new Customexcption();
                 int i = ar[2]; 
               checked
                 {
@@ -33,6 +33,10 @@ namespace Practice
             {
                 Console.WriteLine(ex.Message);
                 //throw new ArgumentOutOfRangeException("not int");
+            }
+            catch(Customexcption ex)
+            {
+                Console.WriteLine(ex.Message);
             }
             catch(Exception ex)
             {
